@@ -24,13 +24,13 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: rhythm(2),
           }}
         />
         <p>
-          Written by <strong>Kyle Mathews</strong> who lives and works in San
-          Francisco building useful things.{' '}
-          <a href="https://twitter.com/kylemathews">
-            You should follow him on Twitter
+          Written by <strong>Claire</strong> on her sofa in Manchester.{' '}
+          <a href="https://twitter.com/claireparkerpen">
+            You should follow her on Twitter
           </a>
         </p>
       </div>
