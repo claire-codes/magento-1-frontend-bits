@@ -21,6 +21,7 @@ class Template extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            backgroundColor: '#F26322',
           }}
         >
           <Link
@@ -28,11 +29,10 @@ class Template extends React.Component {
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'inherit',
-              backgroundColor: '#F26322',
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Magento 1 Frontend Tips
           </Link>
         </h1>
       )
@@ -53,7 +53,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Magento 1 Frontend Tips
           </Link>
         </h3>
       )
