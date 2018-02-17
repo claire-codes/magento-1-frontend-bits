@@ -9,7 +9,7 @@ Most code editors come with a variety of built-in snippets covering common synta
 
 Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing `<?php echo $this->__('Text to translate.'); ?>` "by hand", I only need to type `__` and hit tab to make the value appear.
 
-![translate snippet](autocomplete.gif)
+![translate snippet](./autocomplete.gif)
 
 Here’s how I did this, for in the Atom text editor.
 
@@ -17,7 +17,7 @@ Here’s how I did this, for in the Atom text editor.
 
 Atom's core `language-` packages all include built-in snippets. Custom user snippets for different file types are stored in a single `snippets.cson` file. To open this file, open the command palette (Cmd + Shift + P on Mac) and select the “Application: Open Your Snippets” command. Or, from the menu bar in Mac, open the main Atom menu and select the `Snippets` option.
 
-![command palette](command-palette.png)
+![command palette](./command-palette.png)
 
 You can also access this file directly at `~/.atom/snippets.cson`. The comments show an example snippet and a link to the [official documentation](http://flight-manual.atom.io/using-atom/sections/snippets/). This will explain the definition of each property to use in the Coffeescript object.
 
