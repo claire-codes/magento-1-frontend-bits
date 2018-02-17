@@ -1,13 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Tips]]></title><description><![CDATA[A blog with helpful snippets about Magento 1 for frontend developers.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 17 Feb 2018 23:32:03 GMT</lastBuildDate><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Tips]]></title><description><![CDATA[A blog with helpful snippets about Magento 1 for frontend developers.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 17 Feb 2018 23:46:39 GMT</lastBuildDate><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
 &lt;p&gt;Most code editors come with a variety of built-in snippets covering common syntax. For example, typing the word &lt;code&gt;log&lt;/code&gt; and enter from within a JavaScript file in Atom will expand into our trusty friend, &lt;code&gt;console.log(&quot;&quot;)&lt;/code&gt;. However, if you’re using an editor other than PHPStorm to work with Magento, you may find yourself missing some useful ones. This is especially true in template files (&lt;code&gt;.phtml&lt;/code&gt; filetypes).&lt;/p&gt;
-&lt;p&gt;Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing &lt;code&gt;&amp;#x3C;?php echo $this-&gt;__(&apos;Text to translate.&apos;); ?&gt;&lt;/code&gt; &quot;by hand&quot;, I only need to type &lt;code&gt;__&lt;/code&gt; and hit tab to make the value appear.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./autocomplete.gif&quot; alt=&quot;translate snippet&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing &lt;code&gt;&amp;#x3C;?php echo $this-&gt;__(&apos;Text to translate.&apos;); ?&gt;&lt;/code&gt; “by hand”, I only need to type &lt;code&gt;__&lt;/code&gt; and hit tab to make the value appear.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/autocomplete-2223bc9b26840e96a1feee97c88823ca.gif&quot; alt=&quot;translate snippet&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Here’s how I did this, for in the Atom text editor.&lt;/p&gt;
 &lt;h2&gt;Atom&lt;/h2&gt;
-&lt;p&gt;Atom&apos;s core &lt;code&gt;language-&lt;/code&gt; packages all include built-in snippets. Custom user snippets for different file types are stored in a single &lt;code&gt;snippets.cson&lt;/code&gt; file. To open this file, open the command palette (Cmd + Shift + P on Mac) and select the “Application: Open Your Snippets” command. Or, from the menu bar in Mac, open the main Atom menu and select the &lt;code&gt;Snippets&lt;/code&gt; option.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;./command-palette.png&quot; alt=&quot;command palette&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Atom’s core &lt;code&gt;language-&lt;/code&gt; packages all include built-in snippets. Custom user snippets for different file types are stored in a single &lt;code&gt;snippets.cson&lt;/code&gt; file. To open this file, open the command palette (Cmd + Shift + P on Mac) and select the “Application: Open Your Snippets” command. Or, from the menu bar in Mac, open the main Atom menu and select the &lt;code&gt;Snippets&lt;/code&gt; option.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 34.945397815912635%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA80lEQVQY033QSW6DMBQGYF+jLQYz2BCgAsxghtiMgkAgtIsqau5/kLpZdUOlT//q6U3gTbWwX2CPYS/XHYYIRSR+ov/Q7URBJ6AaLmu/WP2Z8A83XeygI0Fvh4MTHQt7N54MJwFQw6Lfx/XeTHc+PurLY9q+ebfnfCnE9UhZrwbxgaLhnE/NcCuaLRU7E3s9bOw8homI0voIzRrd8oCiWmnZi27J+EKrW1yt5/aaFJ0bMC/Mj/hRgcyTnGzJUt7OGZ+jckuqS85nyhovLPyoPPJOK2S64EXR5dny53IFqJmylwQRhjpREYHoN7VnygP/eoXGDzG+Un8NLt0vAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;command palette&quot;
+        title=&quot;&quot;
+        src=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png&quot;
+        srcset=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-1a291.png 148w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-2bc4a.png 295w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png 590w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-526de.png 885w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fa2eb.png 1180w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png 1282w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
 &lt;p&gt;You can also access this file directly at &lt;code&gt;~/.atom/snippets.cson&lt;/code&gt;. The comments show an example snippet and a link to the &lt;a href=&quot;http://flight-manual.atom.io/using-atom/sections/snippets/&quot;&gt;official documentation&lt;/a&gt;. This will explain the definition of each property to use in the Coffeescript object.&lt;/p&gt;
-&lt;p&gt;The difficulty with snippets is knowing the correct file scope to use. Since Magento template files are the &lt;code&gt;.phtml&lt;/code&gt; filetype, they contain both PHP and HTML scope. Luckily there&apos;s a method within Atom to discover the scope you need .&lt;/p&gt;
+&lt;p&gt;The difficulty with snippets is knowing the correct file scope to use. Since Magento template files are the &lt;code&gt;.phtml&lt;/code&gt; filetype, they contain both PHP and HTML scope. Luckily there’s a method within Atom to discover the scope you need .&lt;/p&gt;
 &lt;p&gt;Open a file in which you want the snippet to be available, and place the cursor in the correct location. Note that scope can vary within a file. For example, if you want the snippet to be available within a &lt;code&gt;&amp;#x3C;?php ... ?&gt;&lt;/code&gt; block, place the cursor within a block, and not outside it. Open the command palette and select the &lt;code&gt;Editor: Log Cursor Scope&lt;/code&gt; command. A notification will appear, showing a list of scopes available. The one required for the snippet should be the top one.&lt;/p&gt;
 &lt;p&gt;For my case, I want the snippet to be available within &lt;code&gt;.phtml&lt;/code&gt; template files, whilst typing HTML. So the scope I need is &lt;code&gt;.text.html.php&lt;/code&gt; (and not &lt;code&gt;.source.php&lt;/code&gt; or &lt;code&gt;.text.html.basic&lt;/code&gt; as I had guessed!).&lt;/p&gt;
 &lt;p&gt;When you save your snippet, Atom will automatically reload them and they should be available immediately in your active text editor (if the syntax is correct!). My final result was this:&lt;/p&gt;
