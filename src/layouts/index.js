@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
-import codeStyle from "../utils/code.css"
+import codeStyle from "../utils/code.scss"
 
 require("prismjs/themes/prism-okaidia.css")
 
