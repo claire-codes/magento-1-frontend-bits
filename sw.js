@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/magento-gatsby-blog/app-d100b9f604b201f08a69.js","4c095f08fee406b24f86c9c2dfdcf6d5"],["/magento-gatsby-blog/commons-9d85a4b72242c55d8f4f.js","08c3efd8958fab1b50f30e2108c4706a"],["/magento-gatsby-blog/index.html","e53c1dcf542c92a32b67e8f0ed12756f"],["/magento-gatsby-blog/offline-plugin-app-shell-fallback/index.html","7777a46bb2a6044e2b83b5bb8f7dbea3"]];
+var precacheConfig = [["/magento-gatsby-blog/app-d100b9f604b201f08a69.js","4665774b5bfb92af4c76183e891c82fd"],["/magento-gatsby-blog/commons-9d85a4b72242c55d8f4f.js","4c251ee3be5d8a154eb64863ad5ffb09"],["/magento-gatsby-blog/index.html","9259626bf34e4c170d364b5a06b7a3fd"],["/magento-gatsby-blog/offline-plugin-app-shell-fallback/index.html","d869d83b8ffb90875ea4d2ca52dd6e8a"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
