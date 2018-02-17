@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Magento 1 Frontend Tips',
     author: 'Claire Parker-Jones',
-    description: 'A blog with helpful snippets about Magento 1 for frontend developers.',
+    description:
+      'A blog with helpful snippets about Magento 1 for frontend developers.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
   pathPrefix: '/magento-gatsby-blog',
@@ -30,7 +31,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -53,19 +59,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
-    {
-        resolve: `gatsby-transformer-remark`,
-        options: {
-          plugins: [
-            {
-              resolve: `gatsby-remark-prismjs`,
-              options: {
-                classPrefix: "language-",
-              },
-            },
-          ],
-        },
-      },
-      `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
   ],
 }
