@@ -5,7 +5,7 @@ module.exports = {
     description: 'A blog with helpful snippets about Magento 1 for frontend developers.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/magento-gatsby-blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -53,5 +53,18 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            {
+              resolve: `gatsby-remark-prismjs`,
+              options: {
+                classPrefix: "language-",
+              },
+            },
+          ],
+        },
+      },
   ],
 }

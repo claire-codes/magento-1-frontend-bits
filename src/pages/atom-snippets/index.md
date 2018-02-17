@@ -29,7 +29,7 @@ For my case, I want the snippet to be available within `.phtml` template files, 
 
 When you save your snippet, Atom will automatically reload them and they should be available immediately in your active text editor (if the syntax is correct!). My final result was this:
 
-```cson
+```coffeescript
 '.text.html.php':
   'translate':
     'prefix': '__'
