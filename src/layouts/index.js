@@ -3,9 +3,9 @@ import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
 
 import { rhythm, scale } from '../utils/typography'
-import codeStyle from "../utils/code.scss"
+import codeStyle from '../utils/code.scss'
 
-require("prismjs/themes/prism-okaidia.css")
+require('prismjs/themes/prism-okaidia.css')
 
 class Template extends React.Component {
   render() {
@@ -52,7 +52,7 @@ class Template extends React.Component {
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit'
+              color: 'inherit',
             }}
             to={'/'}
           >
