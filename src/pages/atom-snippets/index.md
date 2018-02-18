@@ -9,7 +9,7 @@ Most code editors come with a variety of built-in snippets covering common synta
 
 Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing `<?php echo $this->__('Text to translate.'); ?>` "by hand", I only need to type `__` and hit tab to make the value appear.
 
-![translate snippet](./autocomplete.gif)
+![translate snippet](./magento-gatsby-blog/autocomplete.gif)
 
 Here’s how I did this, for in the Atom text editor.
 
