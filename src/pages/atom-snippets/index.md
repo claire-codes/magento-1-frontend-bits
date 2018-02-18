@@ -7,9 +7,9 @@ Snippets are an under appreciated feature of code editors, which can increase yo
 
 Most code editors come with a variety of built-in snippets covering common syntax. For example, typing the word `log` and enter from within a JavaScript file in Atom will expand into our trusty friend, `console.log("")`. However, if you’re using an editor other than PHPStorm to work with Magento, you may find yourself missing some useful ones. This is especially true in template files (`.phtml` filetypes).
 
-Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing `<?php echo $this->__('Text to translate.'); ?>` "by hand", I only need to type `__` and hit tab to make the value appear.
+Recently I’ve been working on a new feature that required a lot of new text content. I was repeatedly typing the template method to translate text. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing `<?php echo $this->__('Text to translate.'); ?>` "by hand", I only need to type `__` and hit tab to make the value appear.
 
-![translate snippet](./magento-gatsby-blog/autocomplete.gif)
+![translate snippet](./autocomplete.gif)
 
 Here’s how I did this, for in the Atom text editor.
 
