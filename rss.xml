@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Tips]]></title><description><![CDATA[A blog with helpful snippets about Magento 1 for frontend developers.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Feb 2018 11:22:23 GMT</lastBuildDate><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Tips]]></title><description><![CDATA[A blog with helpful snippets about Magento 1 for frontend developers.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Feb 2018 11:27:29 GMT</lastBuildDate><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
 &lt;p&gt;Most code editors come with a variety of built-in snippets covering common syntax. For example, typing the word &lt;code&gt;log&lt;/code&gt; and enter from within a JavaScript file in Atom will expand into our trusty friend, &lt;code&gt;console.log(&quot;&quot;)&lt;/code&gt;. However, if you’re using an editor other than PHPStorm to work with Magento, you may find yourself missing some useful ones. This is especially true in template files (&lt;code&gt;.phtml&lt;/code&gt; filetypes).&lt;/p&gt;
 &lt;p&gt;Recently I’ve been working on a new feature that required a lot of new text content. I found myself typing the magic method for translating text over and over. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing &lt;code&gt;&amp;#x3C;?php echo $this-&gt;__(&apos;Text to translate.&apos;); ?&gt;&lt;/code&gt; “by hand”, I only need to type &lt;code&gt;__&lt;/code&gt; and hit tab to make the value appear.&lt;/p&gt;
 &lt;img src=&quot;/autocomplete-2223bc9b26840e96a1feee97c88823ca.gif&quot;&gt;
@@ -8,7 +8,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png&quot;
+    href=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -27,13 +27,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;command palette&quot;
         title=&quot;&quot;
-        src=&quot;/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png&quot;
-        srcset=&quot;/static/command-palette-8736daf821c7e831114b0c2a58a03292-1a291.png 148w,
-/static/command-palette-8736daf821c7e831114b0c2a58a03292-2bc4a.png 295w,
-/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png 590w,
-/static/command-palette-8736daf821c7e831114b0c2a58a03292-526de.png 885w,
-/static/command-palette-8736daf821c7e831114b0c2a58a03292-fa2eb.png 1180w,
-/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png 1282w&quot;
+        src=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png&quot;
+        srcset=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-1a291.png 148w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-2bc4a.png 295w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png 590w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-526de.png 885w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fa2eb.png 1180w,
+/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png 1282w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
