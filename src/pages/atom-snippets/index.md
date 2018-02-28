@@ -3,7 +3,7 @@ title: How to add snippets for templates in Atom
 date: "2018-02-15T23:46:37.121Z"
 ---
 
-Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.
+Snippets are an underappreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.
 
 Most code editors come with a variety of built-in snippets covering common syntax. For example, typing the word `log` and enter from within a JavaScript file in Atom will expand into our trusty friend, `console.log("")`. However, if you’re using an editor other than PHPStorm to work with Magento, you may find yourself missing some useful ones. This is especially true in template files (`.phtml` filetypes).
 
