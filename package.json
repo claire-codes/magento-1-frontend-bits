@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "Magento 1 Frontend Bits",
+  "description": "Useful bits about working with Magento 1 as a frontend developer",
   "version": "1.0.0",
   "author": "Claire Parker-Jones",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/claireparker/magento-1-frontend-bits/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.158",
@@ -36,7 +36,7 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/claireparker/magento-1-frontend-bits#readme",
   "keywords": [
     "gatsby"
   ],
@@ -44,14 +44,14 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/claireparker/magento-1-frontend-bits.git"
   },
   "scripts": {
     "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"

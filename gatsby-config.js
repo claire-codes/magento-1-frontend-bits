@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Magento 1 Frontend Tips',
+    title: 'Magento 1 Frontend Bits',
     author: 'Claire Parker-Jones',
     description:
-      'A blog with helpful snippets about Magento 1 for frontend developers.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+      'A blog about working with Magento 1 for frontend developers.',
+    siteUrl: 'https://claireparker.github.io/magento-1-frontend-bits/',
   },
-  pathPrefix: '/magento-gatsby-blog',
+  pathPrefix: '/magento-1-frontend-bits',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
