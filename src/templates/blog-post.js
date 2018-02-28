@@ -35,9 +35,9 @@ class BlogPostTemplate extends React.Component {
         />
         <BlogPostFooter postUrl={this.props.location.pathname} />
         <hr
-            style={{
-                marginBottom: rhythm(1),
-            }}
+          style={{
+            marginBottom: rhythm(1),
+          }}
         />
         <Bio />
 
