@@ -35,7 +35,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Magento 1 Frontend Tips
+            Magento 1 Frontend Bits
           </Link>
         </h1>
       )
@@ -56,7 +56,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Magento 1 Frontend Tips
+            Magento 1 Frontend Bits
           </Link>
         </h3>
       )
