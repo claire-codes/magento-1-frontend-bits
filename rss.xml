@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Tips]]></title><description><![CDATA[A blog with helpful snippets about Magento 1 for frontend developers.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 18 Feb 2018 22:54:39 GMT</lastBuildDate><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an under appreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Magento 1 Frontend Bits]]></title><description><![CDATA[A blog about working with Magento 1 for frontend developers.]]></description><link>https://claireparker.github.io/magento-1-frontend-bits/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Feb 2018 22:10:09 GMT</lastBuildDate><item><title><![CDATA[How to output a CMS block from another CMS block]]></title><description><![CDATA[Imagine you a CMS block, which you use to output some nice text. But now you want to include the contents of  another  CMS block, right slap…]]></description><link>https://claireparker.github.io/magento-1-frontend-bits//cms-cms/</link><guid isPermaLink="false">https://claireparker.github.io/magento-1-frontend-bits//cms-cms/</guid><pubDate>Tue, 27 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;{{ block type=“cms/block” block_id=“[block-identifier]” }}&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Imagine you a CMS block, which you use to output some nice text. But now you want to include the contents of &lt;em&gt;another&lt;/em&gt; CMS block, right slap-bang in the middle of it!&lt;/p&gt;
+&lt;p&gt;For that you need to use the block directive. When you’re working with CMS blocks in Magento, you can use directives within the text content of the CMS block or page. Directives are defined by double curly brackets &lt;code&gt;{{ directive }}&lt;/code&gt; and provide access to file paths, site urls, translations and much more. Google them for the possibilities!&lt;/p&gt;
+&lt;p&gt;Several different directive types exist, which require different arguments. The block directive is quite straightfoward in its purpose: it retrieves the content of the specified block and outputs it into the CMS block where it was called.&lt;/p&gt;
+&lt;p&gt;To output the contents of a CMS block called “footer-links”, the directive definition would look like:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;{{ block type=“cms/block” block_id=“footer-links” }}&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;The &lt;code&gt;type&lt;/code&gt; should be “cms/block” and the &lt;code&gt;block_id&lt;/code&gt; argument should match the identifier of the CMS block to be loaded. The ID can be found by checking it in the admin panel if you’re not sure (under &lt;code&gt;CMS&lt;/code&gt; &gt; &lt;code&gt;Static blocks&lt;/code&gt; menu).&lt;/p&gt;
+&lt;h2&gt;Why would I split my blocks up like that?&lt;/h2&gt;
+&lt;p&gt;Maybe you’re wondering why you wouldn’t just have a single CMS block that contained all this content instead of two separate blocks?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Perhaps you need to display the CMS content on different pages, e.g. social media links or contact details. Using a single block for the content and loading it into the different pages reduces repeated code and means there’s only one place to edit if there are any changes.&lt;/li&gt;
+&lt;li&gt;It can be confusing and difficult to work with a very large CMS file, especially in Magento’s WYSIWYG editor. It can be easier to split a large file into distinct sections, and use a parent block to group them together and be resposible for the display. This makes it easier to work with the files, and often helps organise the site better. This is also a good tactic for phtml templates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bonus: PHTML template syntax&lt;/h2&gt;
+&lt;p&gt;Compare the CMS directive syntax with the equivalent needed to output the CMS block within a phtml template:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code&gt;&lt;span class=&quot;token prolog&quot;&gt;&amp;lt;?php echo $this-&gt;getLayout()-&gt;createBlock(&apos;cms/block&apos;)-&gt;setBlockId(&apos;footer-links&apos;)-&gt;toHtml() ?&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Do you need CDATA in templates?]]></title><description><![CDATA[In my opinion: no. But it depends. What does CDATA do? You may have found  CDATA  declarations in template files (filetype  .phtml ), CDATA…]]></description><link>https://claireparker.github.io/magento-1-frontend-bits//cdata/</link><guid isPermaLink="false">https://claireparker.github.io/magento-1-frontend-bits//cdata/</guid><pubDate>Tue, 20 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;In my opinion: no.&lt;/p&gt;
+&lt;p&gt;But it depends.&lt;/p&gt;
+&lt;h2&gt;What does CDATA do?&lt;/h2&gt;
+&lt;p&gt;You may have found &lt;code&gt;CDATA&lt;/code&gt; declarations in template files (filetype &lt;code&gt;.phtml&lt;/code&gt;),&lt;/p&gt;
+&lt;p&gt;CDATA marks the text inside as not being XML or HTML. It is ignored by the XML parser.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3.org/TR/REC-xml/#sec-cdata-sect&quot;&gt;https://www.w3.org/TR/REC-xml/#sec-cdata-sect&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://magento.stackexchange.com/questions/164569/put-cdata-it-is-a-good-practice-or-not-necessarily-magento-1-9&quot;&gt;https://magento.stackexchange.com/questions/164569/put-cdata-it-is-a-good-practice-or-not-necessarily-magento-1-9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It’s for validating XHTML markup when JavaScript is inline in the template. It means the validator doesn’t fail and ignores anything between those tags.&lt;/p&gt;
+&lt;p&gt;This shouldn’t matter if you’re using the latest html5 doctype.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/66837/when-is-a-cdata-section-necessary-within-a-script-tag?rq=1&quot;&gt;https://stackoverflow.com/questions/66837/when-is-a-cdata-section-necessary-within-a-script-tag?rq=1&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to add snippets for templates in Atom]]></title><description><![CDATA[Snippets are an underappreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide…]]></description><link>https://claireparker.github.io/magento-1-frontend-bits//atom-snippets/</link><guid isPermaLink="false">https://claireparker.github.io/magento-1-frontend-bits//atom-snippets/</guid><pubDate>Thu, 15 Feb 2018 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Snippets are an underappreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.&lt;/p&gt;
 &lt;p&gt;Most code editors come with a variety of built-in snippets covering common syntax. For example, typing the word &lt;code&gt;log&lt;/code&gt; and enter from within a JavaScript file in Atom will expand into our trusty friend, &lt;code&gt;console.log(&quot;&quot;)&lt;/code&gt;. However, if you’re using an editor other than PHPStorm to work with Magento, you may find yourself missing some useful ones. This is especially true in template files (&lt;code&gt;.phtml&lt;/code&gt; filetypes).&lt;/p&gt;
 &lt;p&gt;Recently I’ve been working on a new feature that required a lot of new text content. I was repeatedly typing the template method to translate text. So to save myself time and keystrokes, I created a snippet for this pattern. Now instead of typing &lt;code&gt;&amp;#x3C;?php echo $this-&gt;__(&apos;Text to translate.&apos;); ?&gt;&lt;/code&gt; “by hand”, I only need to type &lt;code&gt;__&lt;/code&gt; and hit tab to make the value appear.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/autocomplete-2223bc9b26840e96a1feee97c88823ca.gif&quot; alt=&quot;translate snippet&quot;&gt;&lt;/p&gt;
@@ -8,7 +39,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png&quot;
+    href=&quot;/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -27,13 +58,13 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;command palette&quot;
         title=&quot;&quot;
-        src=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png&quot;
-        srcset=&quot;/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-1a291.png 148w,
-/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-2bc4a.png 295w,
-/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png 590w,
-/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-526de.png 885w,
-/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-fa2eb.png 1180w,
-/magento-gatsby-blog/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png 1282w&quot;
+        src=&quot;/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png&quot;
+        srcset=&quot;/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-1a291.png 148w,
+/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-2bc4a.png 295w,
+/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-fb8a0.png 590w,
+/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-526de.png 885w,
+/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-fa2eb.png 1180w,
+/magento-1-frontend-bits/static/command-palette-8736daf821c7e831114b0c2a58a03292-66b54.png 1282w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
