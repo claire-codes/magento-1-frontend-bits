@@ -8,3 +8,9 @@ code {
     padding: 4px 5px 6px;
     white-space: nowrap;
 }
+
+pre {
+    code {
+        white-space: pre;
+    }
+}
