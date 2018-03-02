@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/magento-1-frontend-bits/app-3c162e80f68171dd6ad2.js","d22d463b046347f05b8f5f98a94f5c65"],["/magento-1-frontend-bits/app-c1d7cab578fd035d1fde.js","84d2ec7bb843d0f10f205acf3087b4d2"],["/magento-1-frontend-bits/commons-9d85a4b72242c55d8f4f.js","4388ca07544e07e314e3093223b99127"],["/magento-1-frontend-bits/index.html","4f22a8be25901ed35fe2687ebdcebef4"],["/magento-1-frontend-bits/offline-plugin-app-shell-fallback/index.html","28101e92341d4504487bbcf805177d8f"]];
+var precacheConfig = [["/magento-1-frontend-bits/app-3c162e80f68171dd6ad2.js","d22d463b046347f05b8f5f98a94f5c65"],["/magento-1-frontend-bits/app-80a89874a86c05fcfe12.js","2c87306a33410ede51147ebbac45c59d"],["/magento-1-frontend-bits/app-c1d7cab578fd035d1fde.js","84d2ec7bb843d0f10f205acf3087b4d2"],["/magento-1-frontend-bits/commons-61689ac9f897bb0fcb2f.js","38cd2788967431b36f7cf420de4cd9d5"],["/magento-1-frontend-bits/commons-9d85a4b72242c55d8f4f.js","4388ca07544e07e314e3093223b99127"],["/magento-1-frontend-bits/index.html","ca363e875425d4aa8e79365726e01c28"],["/magento-1-frontend-bits/offline-plugin-app-shell-fallback/index.html","f937a4916284ec1367973dab28fb8a55"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
