@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---atom-snippets": [
-      "path---atom-snippets-9c67507a663f2d6a1aac.js",
-      "path---atom-snippets-9c67507a663f2d6a1aac.js.map"
+      "path---atom-snippets-388e732d7d8bfb992496.js",
+      "path---atom-snippets-388e732d7d8bfb992496.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-9357d8dc33420e641674.js",
@@ -12,13 +12,17 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---phtml-comments": [
+      "path---phtml-comments-cbe896e69492b45a193c.js",
+      "path---phtml-comments-cbe896e69492b45a193c.js.map"
+    ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---cms-cms": [
-      "path---cms-cms-74ff8b2a6dff7e585616.js",
-      "path---cms-cms-74ff8b2a6dff7e585616.js.map"
+      "path---cms-cms-b48ef539a3df698d9f04.js",
+      "path---cms-cms-b48ef539a3df698d9f04.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-9792cfbd23876bd9d741.js",
@@ -29,8 +33,8 @@
       "component---src-layouts-index-js-2511041b60005544d0ae.js.map"
     ],
     "path---index": [
-      "path---index-eeba786eb0144d0badd6.js",
-      "path---index-eeba786eb0144d0badd6.js.map"
+      "path---index-c40b0a6ce89308217836.js",
+      "path---index-c40b0a6ce89308217836.js.map"
     ],
     "commons": [
       "commons-61689ac9f897bb0fcb2f.js",
@@ -38,22 +42,18 @@
       "commons-61689ac9f897bb0fcb2f.js.map",
       "build-js-styles.css.map"
     ],
-    "path---cdata": [
-      "path---cdata-70fa2b3a2989f5c33782.js",
-      "path---cdata-70fa2b3a2989f5c33782.js.map"
-    ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---validation-rule": [
-      "path---validation-rule-3ce909b190e835299862.js",
-      "path---validation-rule-3ce909b190e835299862.js.map"
+      "path---validation-rule-b9b9d594d6e03e274d12.js",
+      "path---validation-rule-b9b9d594d6e03e274d12.js.map"
     ],
     "app": [
-      "app-80a89874a86c05fcfe12.js",
+      "app-301502b9270a55fee815.js",
       "build-js-styles.css",
-      "app-80a89874a86c05fcfe12.js.map",
+      "app-301502b9270a55fee815.js.map",
       "build-js-styles.css.map"
     ]
   }
