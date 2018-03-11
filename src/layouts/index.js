@@ -24,7 +24,6 @@ class Template extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            backgroundColor: '#F26322',
           }}
         >
           <Link
@@ -32,6 +31,9 @@ class Template extends React.Component {
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'inherit',
+              letterSpacing: '4px',
+              color: '#F26322',
+              textShadow: '5px 5px #333',
             }}
             to={'/'}
           >
