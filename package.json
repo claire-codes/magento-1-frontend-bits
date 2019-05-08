@@ -25,6 +25,8 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
     "lodash": "^4.17.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-responsive-grid": "^0.3.4",
     "typeface-merriweather": "0.0.54",
     "typeface-montserrat": "0.0.54",
