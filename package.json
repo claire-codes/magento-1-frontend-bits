@@ -31,12 +31,12 @@
     "react-dom": "^16.8.6",
     "react-responsive-grid": "^0.3.4",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.54",
+    "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typescript": "^3.4.5",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.15.10",
-    "webpack": "^4.30.0"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "webpack": "^4.31.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
