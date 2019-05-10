@@ -66,6 +66,14 @@ module.exports = {
         ],
       },
     },
-    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
   ],
 }
