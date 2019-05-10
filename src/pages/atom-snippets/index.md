@@ -1,6 +1,6 @@
 ---
 title: How to add snippets for templates in Atom
-date: "2018-02-15T23:46:37.121Z"
+date: '2018-02-15T23:46:37.121Z'
 ---
 
 Snippets are an underappreciated feature of code editors, which can increase your typing speed when writing code. Snippets provide autocompletion for common chunks of code. Type a few characters, then hit tab or enter, and the snippet expands into the full code block required.
