@@ -1,7 +1,6 @@
 import React from 'react'
 
 import profilePic from './profile-pic.jpg'
-import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
   render() {
@@ -9,18 +8,18 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginBottom: `4.375rem`,
         }}
       >
         <img
           src={profilePic}
           alt={`Me`}
           style={{
-            marginRight: rhythm(1 / 2),
+            marginRight: `0.875rem`,
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: rhythm(2),
+            width: `3.5rem`,
+            height: `3.5rem`,
+            borderRadius: `3.5rem`,
           }}
         />
         <p>
