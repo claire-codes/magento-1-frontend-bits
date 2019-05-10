@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
         <hr />
         <Bio />
 
-        <ul>
+        <ul style={{ listStyle: 'none', padding: 0, marginLeft: 0 }}>
           {previous && (
             <li>
               <Link to={previous.fields.slug} rel="prev">

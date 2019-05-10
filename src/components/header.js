@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
             color: 'inherit',
             letterSpacing: '4px',
             color: '#F26322',
-            textShadow: '5px 5px #333',
+            textShadow: '3px 3px #333',
           }}
           to={'/'}
         >
