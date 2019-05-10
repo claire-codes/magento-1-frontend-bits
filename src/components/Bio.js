@@ -26,7 +26,12 @@ class Bio extends React.Component {
           Written by <strong>Claire</strong> on her sofa in Manchester.{' '}
           <a href="https://twitter.com/claireparkerpen">
             You should follow her on Twitter
+          </a>{' '}
+          and definitely{' '}
+          <a href="https://www.instagram.com/claire_codes/">
+            follow her on Instagram
           </a>
+          .
         </p>
       </div>
     )
