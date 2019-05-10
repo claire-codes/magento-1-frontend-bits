@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Magento 1 Frontend Bits',
     author: 'Claire Parker-Jones',
-    description:
-      'A blog about working with Magento 1 for frontend developers.',
+    description: 'A blog about working with Magento 1 for frontend developers.',
     siteUrl: 'https://claireparker.github.io/magento-1-frontend-bits/',
   },
   pathPrefix: '/magento-1-frontend-bits',
@@ -54,11 +53,18 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`500`, `900`],
+          },
+          {
+            family: `Merriweather`,
+          },
+        ],
       },
     },
-    `gatsby-plugin-sass`,
   ],
 }

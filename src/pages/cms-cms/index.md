@@ -1,6 +1,6 @@
 ---
 title: How to output a CMS block from another CMS block
-date: "2018-02-27T23:46:37.121Z"
+date: '2018-02-27T23:46:37.121Z'
 ---
 
 ```
@@ -25,13 +25,14 @@ The `type` should be “cms/block” and the `block_id` argument should match th
 
 Maybe you're wondering why you wouldn't just have a single CMS block that contained all this content instead of two separate blocks?
 
-* Perhaps you need to display the CMS content on different pages, e.g. social media links or contact details. Using a single block for the content and loading it into the different pages reduces repeated code and means there's only one place to edit if there are any changes.
-* It can be confusing and difficult to work with a very large CMS file, especially in Magento's WYSIWYG editor. It can be easier to split a large file into distinct sections, and use a parent block to group them together and be resposible for the display. This makes it easier to work with the files, and often helps organise the site better. This is also a good tactic for phtml templates.
+- Perhaps you need to display the CMS content on different pages, e.g. social media links or contact details. Using a single block for the content and loading it into the different pages reduces repeated code and means there's only one place to edit if there are any changes.
+- It can be confusing and difficult to work with a very large CMS file, especially in Magento's WYSIWYG editor. It can be easier to split a large file into distinct sections, and use a parent block to group them together and be resposible for the display. This makes it easier to work with the files, and often helps organise the site better. This is also a good tactic for phtml templates.
 
 ## Bonus: PHTML template syntax
 
 Compare the CMS directive syntax with the equivalent needed to output the CMS block within a phtml template:
 
 ```html
-<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-links')->toHtml() ?>
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-links')->toHtml()
+?>
 ```

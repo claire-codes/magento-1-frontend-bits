@@ -1,10 +1,11 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import { rhythm } from '../utils/typography'
+import Layout from '../components/layout'
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <Layout>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
@@ -21,7 +22,7 @@ class BlogIndex extends React.Component {
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: `0.4375rem`,
                 }}
               >
                 <Link
@@ -36,7 +37,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-      </div>
+      </Layout>
     )
   }
 }

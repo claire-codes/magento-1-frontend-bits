@@ -1,11 +1,5 @@
 import React from 'react'
 
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
-import { rhythm } from '../utils/typography'
-
 class Bio extends React.Component {
   render() {
     let githubUrl = `https://github.com/claireparker/magento-gatsby-blog/blob/master/src/pages${

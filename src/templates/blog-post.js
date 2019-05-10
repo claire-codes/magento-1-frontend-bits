@@ -1,55 +1,37 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
 import BlogPostFooter from '../components/BlogPostFooter'
-import { rhythm, scale } from '../utils/typography'
+import Layout from '../components/layout'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next } = this.props.pathContext
+    const { previous, next } = this.props.pageContext
 
     return (
-      <div>
+      <Layout>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            fontSize: `0.85rem`,
           }}
         >
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr />
         <BlogPostFooter postUrl={this.props.location.pathname} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr />
         <Bio />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
+        <ul style={{ listStyle: 'none', padding: 0, marginLeft: 0 }}>
           {previous && (
             <li>
               <Link to={previous.fields.slug} rel="prev">
@@ -66,7 +48,7 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-      </div>
+      </Layout>
     )
   }
 }
