@@ -24,7 +24,6 @@ const Header = ({ siteTitle }) => (
           style={{
             boxShadow: 'none',
             textDecoration: 'none',
-            color: 'inherit',
             letterSpacing: '4px',
             color: '#F26322',
             textShadow: '3px 3px #333',
