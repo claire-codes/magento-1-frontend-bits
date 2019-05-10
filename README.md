@@ -1,10 +1,18 @@
-# gatsby-starter-blog
+# magento-1-frontend-bits
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/claireparker/magento-gatsby-blog.svg)](https://greenkeeper.io/)
-Gatsby starter for creating a blog
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+[![Greenkeeper badge](https://badges.greenkeeper.io/claireparker/magento-1-frontend-bits.svg)](https://greenkeeper.io/)
+A small blog about Magento 1, built with Gatsby.
 
 ## Running in development
-`gatsby develop`
+
+```sh
+gatsby develop
+```
+
+## Deploy
+
+Deploy to GitHub pages by running the script locally:
+
+```sh
+npm run deploy
+```
