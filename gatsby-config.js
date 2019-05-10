@@ -53,11 +53,17 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        google: {
-          families: ['Montserrat', 'Merriweather'],
-        },
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`500`, `900`],
+          },
+          {
+            family: `Merriweather`,
+          },
+        ],
       },
     },
   ],
