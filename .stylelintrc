@@ -1,5 +1,13 @@
 {
   "extends": [
     "stylelint-config-recommended",
-  ]
+  ],
+  "rules": {
+    "number-leading-zero": "always",
+    "length-zero-no-unit": true,
+    "color-named": "never",
+    "declaration-no-important": true,
+    "shorthand-property-no-redundant-values": true,
+    "property-blacklist": ["background", "font", "animation"]
+  }
 }
