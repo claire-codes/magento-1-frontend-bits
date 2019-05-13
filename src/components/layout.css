@@ -1,18 +1,7 @@
-html {
-  font-family: 'Merriweather', 'Georgia', serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 article,
 aside,
 details,
 figcaption,
-figure,
 footer,
 header,
 main,
@@ -47,11 +36,6 @@ a:active,
 a:hover {
   outline-width: 0;
 }
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
 b,
 strong {
   font-weight: inherit;
@@ -59,10 +43,6 @@ strong {
 }
 dfn {
   font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 mark {
   background-color: #ff0;
@@ -84,9 +64,6 @@ sub {
 sup {
   top: -0.5em;
 }
-img {
-  border-style: none;
-}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -94,16 +71,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
-}
-figure {
-  margin: 1em 40px;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
 }
 button,
 input,
@@ -143,11 +112,6 @@ button::-moz-focus-inner {
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
 legend {
   box-sizing: border-box;
   color: inherit;
@@ -185,7 +149,11 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.75em 'Merriweather', 'Georgia', serif;
+  font-family: 'Merriweather', 'Georgia', serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1.15rem;
+  line-height: 1.75em;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -199,6 +167,9 @@ html {
   box-sizing: inherit;
 }
 body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: 'Merriweather', 'Georgia', serif;
   font-weight: normal;
@@ -209,7 +180,9 @@ body {
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
+
 img {
+  border-style: none;
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
@@ -220,15 +193,16 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 h1 {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
+  margin-bottom: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
   color: inherit;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -385,7 +359,10 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 figure {
+  display: block;
+  margin: 1em 40px;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -422,7 +399,11 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
 fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -472,7 +453,10 @@ iframe {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 hr {
+  box-sizing: content-box;
+  overflow: visible;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -558,10 +542,11 @@ acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
 }
+
 abbr[title] {
+  text-decoration: underline dotted;
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
-  text-decoration: none;
 }
 thead {
   text-align: left;
