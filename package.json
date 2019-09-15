@@ -44,7 +44,7 @@
     "prettier": "^1.10.2",
     "react-helmet": "^5.2.1",
     "stylelint": "^10.0.1",
-    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-recommended": "^3.0.0",
     "stylelint-webpack-plugin": "^0.10.5"
   },
   "homepage": "https://github.com/claireparker/magento-1-frontend-bits#readme",
